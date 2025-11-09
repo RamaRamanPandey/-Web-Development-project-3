@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;}
+     body{
+         background-image:linear-gradient(to right,rgba(255, 255, 0, 0.611),rgba(100, 206, 111, 0.585),rgba(255, 0, 0, 0.619)) ;
+         padding-top: 2.5rem;
+         box-sizing: border-box;
+         padding-bottom: 2.5rem;
+        }
+    .form{
+        width: 500px;
+        height: 630px;
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        border-radius: 1rem;
+        margin: auto; 
+        margin-top: 20px;
+        padding: 30px;
+        box-shadow: 0px 0px 10px 1px #a7a2a2;
+        font-family: Arial, sans-serif;
+        background-color: rgba(167, 238, 231, 0.652);
+        z-index: 20;}
+
+    .heading{
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 2rem;
+        font-weight: 700; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .input{
+        height: 1.8rem;
+        width: 50%;
+        border: 1.5px solid rgba(0, 0, 0, 0.414);
+        border-radius: .3rem;
+        padding: 0px 6px ;
+       
+    }
+    .lavel{
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.815);
+        
+    }
+    #file{
+        border: none;
+    }
+    .bottom{
+        height: 2rem;
+        width: 6rem;
+        border: none;
+        border-radius: .5rem;
+        background-color: rgb(0, 123, 255);
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-left: 37%;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="heading">Indikraft Internship</div>
+    <!-- <form action="https://formsubmit.co/ramaramanpandey2008@gmail.com" method="POST" class="form"> -->
+    <form action="https://formspree.io/f/xwpaenrn" method="POST" class="form">
+    <lavel for="name" class="lavel">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Enter Name ...." class="input" required><br><br>
+    <label for="email"   class="lavel">Email Address:</label>
+    <input type="email"  name="email" id="email" placeholder="Enter Email Id....."  class="input" required><br><br>
+    <label for="number" class="lavel">Phone Number:</label>
+    <input type="tel" name="phone no." id="number" placeholder="Enter Phone no....." class="input" required><br><br>
+    <label for="college" class="lavel">College Name:</label>
+    <input type="text" name="college name" id="college" placeholder="Your Answer" class="input" required><br><br>
+    <label for="city" class="lavel">State & City:</label>
+    <input type="text" name="State and city" id="city" placeholder="Your Answer" class="input" required><br><br>
+    <label for="degree" class="lavel">Degree Pursuing:</label>
+    <input type="text" name="Degree "id="degree" placeholder="Your Answer" class="input" required><br><br>
+    <label for="branch" class="lavel">Branch:</label>
+    <input type="text" name="branch." id="branch" placeholder="Your Answer" class="input" required><br><br>
+    <label for="year" class="lavel">Year of Study:</label>
+    <input type="number" name="Year" id="year" placeholder="Your Answer" class="input" required><br><br>
+    <label for="skills" class="lavel">Technical Skills:</label>
+    <input type="text" name="Skill" id="skills" placeholder="Your Answer" class="input" required><br><br>
+    <label for="skills" class="lavel"> Internship Field:</label>
+  <select id="field" class="input" name="Field." required>
+        <option value="web development">Web Development</option>
+        <option value="data science">Data Science</option>
+        <option value="digital marketing">Digital Marketing</option>
+        <option value="graphic design">Graphic Design</option>
+        <option value="content writing">Content Writing</option>
+    </select><br><br> 
+    <label for="file">Resume:</label>
+    <input type="file" name="file" id="file" class="input" required><br><br>
+    <input type="submit"  value="submit" class="bottom" >
+    </form>
+</body>
+</html>
